@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "${modID}",
+  "version": "${version}",
+  "name": "${modName}",
+  "description": "${description}",
+  "authors": [
+    "${uname}"
+  ],
+  "license": "Mozilla Public License 2.0 (MPL-2.0)",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.jahessit.minecraft.bblocks.BBlocksFabricInit"
+      }
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.16.2 <1.17",
+    "java": ">=${jvmVersion}",
+    "architectury-fabric": ">=${architecturyApiVersion} <2.0"
+  },
+  "recommends": {
+    "fabricloader": ">=${fabricLoaderVersion}",
+    "fabric-api": ">=${fabricApiVersion}",
+    "fabric-language-kotlin": ">=${fabricLanguageKotlinVersion}"
+  }
+}

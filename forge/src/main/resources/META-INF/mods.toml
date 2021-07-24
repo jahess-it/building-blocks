@@ -1,0 +1,29 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[1, )"
+license = "Mozilla Public License 2.0 (MPL-2.0)"
+
+[[mods]]
+    modId = "${modID}"
+    version = "${version}"
+    displayName = "${modName}"
+    displayURL = "https://github.com/jahess-it/building-blocks"
+    itemIcon = "minecraft:diamond_block"
+    authors = "${uname}"
+
+    [[dependencies.bblocks]]
+        modId = "minecraft"
+        mandatory = true
+        versionRange = "[1.16.2, 1.17)"
+        side = "BOTH"
+
+    [[dependencies.bblocks]]
+        modId = "forge"
+        mandatory = true
+        versionRange = "[33, 37)"
+        side = "BOTH"
+
+    [[dependencies.bblocks]]
+        modId = "architectury-forge"
+        mandatory = true
+        versionRange = "[1, 2)"
+        side = "BOTH"
